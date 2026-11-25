@@ -10,8 +10,12 @@
 | Privacy | Review tracked text and author metadata throughout history | Only synthetic inputs and intended public material |
 | Hosting | Compare local HEAD with the authorized remote main, then clone from GitHub | Matching commits and successful sample run |
 
-Recorded local results accompany the delivery. Owner acceptance and GitHub checks are pending.
+Local and remote test records accompany the delivery.
 
 ## Independent review of the baseline
 
-The owner reported that the independent reviewer verified the ZIP digest and all 19 entries, recovered three commits and ten tracked files, and matched all three originals byte for byte. Git integrity, five ignore rules, six internal links, the secret-pattern scan and the clean sample run passed. This result applies to commit 346820e. Public URL, remote main, GitHub rendering and a fresh HTTPS clone await publication and verification.
+The owner reported that the independent reviewer verified the ZIP digest and all 19 entries, recovered three commits and ten tracked files, and matched all three originals byte for byte. Git integrity, five ignore rules, six internal links, the secret-pattern scan and the clean sample run passed. This result applies to commit 346820e.
+
+## Public repository acceptance
+
+At commit `0d324cd1221238d395e31533e148b14b6b5a8faf`, the public main ref, local HEAD and fresh HTTPS clone matched. All four commits and eleven tracked files were present. Strict Git integrity checks passed, the three intake files matched the originals byte for byte, and the documented command printed `Open items: 2` with a clean working tree afterwards. The README rendered on GitHub and all six internal documentation links resolved. The history scan found no matches outside the intended identities for the privacy and credential patterns tested.
